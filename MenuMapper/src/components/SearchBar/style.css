@@ -1,0 +1,271 @@
+.search-bar {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+.search-bar .content {
+  align-items: center;
+  align-self: stretch;
+  background-color: var(--system-materialssm-l-thick);
+  border-radius: 10px;
+  display: flex;
+  height: 36px;
+  padding: 8px;
+  position: relative;
+  width: 100%;
+}
+
+.search-bar .magnifyingglass-instance {
+  margin-bottom: -4px !important;
+  margin-top: -4px !important;
+}
+
+.search-bar .placeholder-label {
+  font-family: var(--default-size-body-font-family);
+  font-size: var(--default-size-body-font-size);
+  font-style: var(--default-size-body-font-style);
+  font-weight: var(--default-size-body-font-weight);
+  letter-spacing: var(--default-size-body-letter-spacing);
+  line-height: var(--default-size-body-line-height);
+  margin-top: -2px;
+  position: relative;
+}
+
+.search-bar .span {
+  color: #0a7aff;
+  font-family: var(--default-size-body-font-family);
+  font-size: var(--default-size-body-font-size);
+  font-style: var(--default-size-body-font-style);
+  font-weight: var(--default-size-body-font-weight);
+  letter-spacing: var(--default-size-body-letter-spacing);
+  line-height: var(--default-size-body-line-height);
+}
+
+.search-bar-container {
+  display: flex;
+  width: 100%;
+}
+
+.search-bar .text-wrapper-2 {
+  color: #3c3c4399;
+  font-family: var(--default-size-body-font-family);
+  font-size: var(--default-size-body-font-size);
+  font-style: var(--default-size-body-font-style);
+  font-weight: var(--default-size-body-font-weight);
+  letter-spacing: var(--default-size-body-letter-spacing);
+  line-height: var(--default-size-body-line-height);
+}
+
+.search-bar .div {
+  flex: 1;
+  font-family: var(--default-size-body-font-family);
+  font-size: var(--default-size-body-font-size);
+  font-style: var(--default-size-body-font-style);
+  font-weight: var(--default-size-body-font-weight);
+  letter-spacing: var(--default-size-body-letter-spacing);
+  line-height: var(--default-size-body-line-height);
+  margin-top: -2px;
+  position: relative;
+}
+
+.search-bar .close {
+  position: relative;
+}
+
+.search-bar .cont {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  margin-bottom: -4px;
+  margin-left: -182px;
+  margin-top: -4px;
+  position: relative;
+}
+
+.search-bar .placeholder-label-2 {
+  color: var(--label-colorslc-l-secondary);
+  font-family: var(--default-size-body-font-family);
+  font-size: var(--default-size-body-font-size);
+  font-style: var(--default-size-body-font-style);
+  font-weight: var(--default-size-body-font-weight);
+  letter-spacing: var(--default-size-body-letter-spacing);
+  line-height: var(--default-size-body-line-height);
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.search-bar .class {
+  height: 24px !important;
+  margin-bottom: -2px !important;
+  margin-left: -182px !important;
+  margin-top: -2px !important;
+  position: relative !important;
+  width: 24px !important;
+}
+
+.search-bar .mic {
+  height: 24px !important;
+  margin-bottom: -2px !important;
+  margin-top: -2px !important;
+  position: relative !important;
+  width: 24px !important;
+}
+
+.search-bar .cont-2 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  margin-bottom: -4px;
+  margin-left: -176px;
+  margin-top: -4px;
+  position: relative;
+}
+
+.search-bar .class-2 {
+  height: 18px !important;
+  margin-left: -176px !important;
+  position: relative !important;
+  width: 18px !important;
+}
+
+.search-bar .state-x {
+  height: 18px !important;
+  position: relative !important;
+  width: 18px !important;
+  margin-left: auto;
+}
+
+.search-bar .content-2 {
+  align-items: center;
+  background-color: var(--system-materialssm-l-thick);
+  border-radius: 10px;
+  display: flex;
+  flex: 1;
+  flex-grow: 1;
+  height: 36px;
+  padding: 8px;
+  position: relative;
+}
+
+.search-bar .placeholder-label-3 {
+  flex: 1;
+  font-family: var(--default-size-body-font-family);
+  font-size: var(--default-size-body-font-size);
+  font-style: var(--default-size-body-font-style);
+  font-weight: var(--default-size-body-font-weight);
+  letter-spacing: var(--default-size-body-letter-spacing);
+  line-height: var(--default-size-body-line-height);
+  margin-top: -2px;
+  position: relative;
+}
+
+.search-bar .cancel {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  position: relative;
+}
+
+.search-bar .text-wrapper-3 {
+  color: var(--system-colorssc-l-blue);
+  font-family: var(--default-size-body-font-family);
+  font-size: var(--default-size-body-font-size);
+  font-style: var(--default-size-body-font-style);
+  font-weight: var(--default-size-body-font-weight);
+  letter-spacing: var(--default-size-body-letter-spacing);
+  line-height: var(--default-size-body-line-height);
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.search-bar.topbar-true {
+  align-items: center;
+  gap: 8px;
+  width: 300px;
+}
+
+.search-bar.topbar-false {
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.search-bar .mic-true.def-center {
+  justify-content: space-between;
+}
+
+.search-bar .def-center.clear-icon-true {
+  justify-content: space-between;
+}
+
+.search-bar .def-center.clear-icon-false.mic-false {
+  justify-content: center;
+}
+
+.search-bar .active {
+  color: transparent;
+}
+
+.search-bar .default {
+  color: var(--label-colorslc-l-secondary);
+}
+
+.search-bar .filled {
+  color: var(--label-colorslc-l-primary);
+}
+
+.search-bar .content.active .placeholder-label {
+  color: transparent;
+  flex: 1;
+}
+
+.search-bar .content.def-center .placeholder-label {
+  color: var(--label-colorslc-l-secondary);
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.search-bar .content.default .placeholder-label {
+  color: var(--label-colorslc-l-secondary);
+  flex: 1;
+}
+
+.search-bar .content.filled .placeholder-label {
+  color: var(--label-colorslc-l-primary);
+  flex: 1;
+}
+
+.search-bar .content.active .div {
+  color: transparent;
+}
+
+.search-bar .content.def-center .div {
+  color: var(--label-colorslc-l-secondary);
+}
+
+.search-bar .content.default .div {
+  color: var(--label-colorslc-l-secondary);
+}
+
+.search-bar .content.filled .div {
+  color: var(--label-colorslc-l-primary);
+}
+
+.search-bar .content.mic-false .close {
+  height: 18px;
+  margin-bottom: -297px;
+  width: 18px;
+}
+
+.search-bar .content.mic-true .close {
+  height: 24px;
+  margin-bottom: -356px;
+  width: 24px;
+}
