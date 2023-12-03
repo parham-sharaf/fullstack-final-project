@@ -1,0 +1,24 @@
+.image24Icon {
+  position: relative;
+}
+.locofyIntro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  font-size: 4.06rem;
+  left: 0;
+  top: 0;
+  width: auto;
+  height: auto;
+  min-width: 100vw;
+  min-height: 100vh;
+  color: var(--color-black);
+  font-family: var(--font-akshar);
+  background-image: url("../assets/IntroBackground.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
