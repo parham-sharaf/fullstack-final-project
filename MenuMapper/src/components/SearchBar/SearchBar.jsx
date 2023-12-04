@@ -21,8 +21,12 @@ export const SearchBar = ({ value, onChange, placeholder, clearIcon, className }
   };
 
   const handleKeyPress = (event) => {
+
     if (event.key === "Enter") {
       console.log("Search value:", searchValue);
+      const sqlite3 = require('sqlite3').verbose();
+      const db = new sqlite3.Database('./DB/recipe.db');
+
       // Here you can perform further actions with the search value
     }
   };
