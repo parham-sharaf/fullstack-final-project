@@ -13,7 +13,7 @@ const RecipePage = () => {
         <Link className="HomeLink" to="/home">
           <div className={styles.home}>HOME</div>
         </Link>
-        <Link className="HomeLink" to="/home">
+        <Link className="HomeLink" to="/recipes">
           <div className={styles.history}>HISTORY</div>
         </Link>
         <div className={styles.searchbar}>
