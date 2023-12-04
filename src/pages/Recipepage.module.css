@@ -1,135 +1,58 @@
-.image17Icon {
+.homeParent {
+    user-select: none;
     position: absolute;
-    top: 1156px;
-    left: 956px;
-    width: 594.4px;
-    height: 401px;
+    top: 2rem;
+    left: 2rem;
+    display: flex;
+  }
+  .image5Icon {
+    height: 100%;
     object-fit: cover;
-  }
-  .hamburger {
-    position: absolute;
-    height: 4.24%;
-    width: 13.5%;
-    top: 18.5%;
-    left: 19.54%;
-    display: inline-block;
-  }
-  .ingredients {
-    margin: 0;
-  }
-  .groundBeef {
-    margin-bottom: 0;
-  }
-  .groundBeefSaltPepperHambur {
-    margin: 0;
-    padding-left: var(--padding-21xl);
-  }
-  .ingredientsGroundBeefContainer {
-    position: absolute;
-    height: 53.37%;
-    width: 37.65%;
-    top: 23.7%;
-    left: 7.49%;
-    font-size: var(--font-inherit);
-    font-weight: 500;
-    font-family: var(--font-inherit);
-    color: #0e0d0d;
-    display: inline-block;
-    mix-blend-mode: darken;
-  }
-  .history,
-  .home {
-    position: absolute;
-    top: 15px;
+    padding-right: 3rem;
   }
   .home {
-    right: 995px;
-    cursor: pointer;
+    position: relative;
+    padding-right: 2rem;
+    text-decoration: none;
   }
   .history {
-    right: 881px;
-  }
-  .magnifyingglass1 {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    line-height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .magnifyingglass {
     position: relative;
-    width: 28px;
-    height: 28px;
-    overflow: hidden;
-    flex-shrink: 0;
   }
-  .placeholderLabel {
-    flex: 1;
-    position: relative;
-    font-size: var(--default-size-body-size);
-    letter-spacing: -0.41px;
-    line-height: 22px;
-    font-family: var(--font-abril-fatface);
-    text-align: left;
-  }
-  .content,
   .searchbar {
     display: flex;
-    justify-content: flex-start;
-  }
-  .content {
-    align-self: stretch;
-    border-radius: var(--br-3xs);
-    background-color: var(--system-materials-sm-l-thick);
-    height: 36px;
     flex-direction: row;
-    align-items: center;
-    padding: var(--padding-5xs);
-    box-sizing: border-box;
-  }
-  .searchbar {
-    position: absolute;
-    top: 8px;
-    left: 456px;
-    width: 787px;
-    flex-direction: column;
     align-items: flex-start;
-    text-align: center;
-    font-size: var(--font-size-lg);
+    text-align: left;
     color: var(--label-colors-lc-l-secondary);
-    font-family: var(--font-abhaya-libre-extrabold);
   }
-  .homeParent,
-  .image5Icon {
-    position: absolute;
-    height: 73px;
+  .content input {
+    margin-left: 4rem;
+    font-size: var(--font-size-lg);
+    border-radius: 4rem;
+    text-indent: 1rem;
   }
-  .image5Icon {
-    top: 0;
-    left: 0;
-    width: 154px;
-    object-fit: cover;
+  .ingredients, .instructions {
+    margin: 0;
   }
-  .homeParent {
-    top: 31px;
-    right: 1014px;
-    width: 1243px;
-    font-size: var(--font-size-xl);
-    font-family: var(--font-akshar);
+  body {
+    position: relative;
+    border-radius: var(--br-6xl);
+    background-color: var(--color-white);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    text-align: left;
+    font-size: 45px;
+    color: var(--color-black);
+    font-family: var(--font-days-one);
+    background-image: url("../assets/Recipe Background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
   }
-  .image16Icon {
-    position: absolute;
-    top: 0;
-    left: 1856px;
-    width: 493px;
-    height: 364.8px;
-    object-fit: cover;
-  }
-  .locofyRecipePageChild {
+  .recipeText {
+    background-image: url("../assets/Rectangle 1.svg");
+    border-radius: 10rem;
     position: absolute;
     height: 79.45%;
     width: 42.66%;
@@ -138,52 +61,36 @@
     bottom: 7.58%;
     left: 3.92%;
     max-width: 100%;
-    overflow: hidden;
+    overflow: scroll;
     max-height: 100%;
+    padding-left: 2rem;
   }
-  .image21Icon {
-    position: absolute;
-    top: 469px;
-    left: 0;
-    width: 440px;
-    height: 752.2px;
-    object-fit: cover;
-    opacity: 0.5;
+  .recipeTitle {
+    text-align: center;
+    font-size: 5rem;
   }
-  .image19Icon,
-  .image20Icon,
+  .bulletPt {
+    margin-bottom: 1.5rem;
+  }
+  .instructionsList {
+    margin: 0;
+  }
   .image23Icon {
     position: absolute;
-    top: 321px;
-    left: 1200px;
-    width: 1017px;
-    height: 954px;
+    height: 55%;
+    width: 35%;
+    top: 12.97%;
+    left: 53.92%;
     object-fit: cover;
   }
-  .image19Icon,
-  .image20Icon {
-    top: 572px;
-    left: 1709px;
-    width: 640px;
-    height: 985px;
-  }
-  .image20Icon {
-    top: 1133px;
-    left: 54px;
-    width: 378.7px;
-    height: 423.9px;
-    opacity: 0.5;
-  }
-  .locofyRecipePage {
-    position: relative;
-    border-radius: var(--br-6xl);
-    background-color: var(--color-white);
-    width: 100%;
-    height: 1557px;
-    overflow: hidden;
-    text-align: left;
-    font-size: 45px;
-    color: var(--color-black);
-    font-family: var(--font-days-one);
+  .recipePage {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: horizontal;
+    width: 100vw;
+    height: 100vh;
+    border: black solid;
   }
   

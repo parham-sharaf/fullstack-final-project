@@ -1,212 +1,90 @@
-.searchUpYour {
+a { text-decoration: none; color:black }
+a:visited { text-decoration: none; color:black; }
+a:hover, a:active { text-decoration: none; color:black }
+.homeParent {
+    user-select: none;
     position: absolute;
-    height: 9.68%;
-    width: 44.52%;
+    top: 2rem;
+    left: 2rem;
+    display: flex;
+  }
+  .image5Icon {
+    height: 100%;
+    object-fit: cover;
+    padding-right: 3rem;
+  }
+  .home {
+    position: relative;
+    padding-right: 2rem;
+    text-decoration: none;
+  }
+  .history {
+    position: relative;
+  }
+  .searchbar {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+    color: var(--label-colors-lc-l-secondary);
+  }
+  .content input {
+    margin-left: 4rem;
+    font-size: var(--font-size-lg);
+    border-radius: 4rem;
+    text-indent: 1rem;
+  }
+  .pageChild {
+    position: absolute;
     top: 32.72%;
     left: 7.05%;
+    height: 14rem;
+    width: 80rem;
+    display: block;
+  }
+  .searchUpYour {
+    user-select: none;
     font-weight: 300;
     display: inline-block;
   }
-  .history,
-  .home {
-    position: absolute;
-    top: 15px;
-    right: 995px;
-  }
-  .history {
-    right: 881px;
-  }
-  .magnifyingglass1 {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    line-height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .magnifyingglass {
-    position: relative;
-    width: 28px;
-    height: 28px;
-    overflow: hidden;
-    flex-shrink: 0;
-  }
-  .placeholderLabel {
-    flex: 1;
-    position: relative;
-    font-size: var(--default-size-body-size);
-    letter-spacing: -0.41px;
-    line-height: 22px;
-    font-family: var(--font-abril-fatface);
-    text-align: left;
-  }
-  .content,
-  .searchbar {
-    display: flex;
-    justify-content: flex-start;
-  }
-  .content {
-    align-self: stretch;
-    border-radius: var(--br-3xs);
-    background-color: var(--system-materials-sm-l-thick);
-    height: 36px;
-    flex-direction: row;
-    align-items: center;
-    padding: var(--padding-5xs);
-    box-sizing: border-box;
-  }
-  .searchbar {
-    position: absolute;
-    top: 8px;
-    left: 456px;
-    width: 787px;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: center;
-    font-size: var(--font-size-lg);
-    color: var(--label-colors-lc-l-secondary);
-    font-family: var(--font-abhaya-libre-extrabold);
-  }
-  .homeParent,
-  .image5Icon {
-    position: absolute;
-    height: 73px;
-  }
-  .image5Icon {
-    top: 0;
-    left: 0;
-    width: 154px;
-    object-fit: cover;
-  }
-  .homeParent {
-    top: 26px;
-    right: 828px;
-    width: 1243px;
-    font-size: var(--font-size-xl);
-  }
-  .image6Icon,
-  .image7Icon {
-    position: absolute;
-    top: 965px;
-    left: 0;
-    width: 538px;
-    height: 542px;
-    object-fit: cover;
-  }
-  .image7Icon {
-    top: 0;
-    left: 1677px;
-    width: 463px;
-    height: 386px;
-  }
-  .magnifyingglass3 {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    line-height: 50px;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .placeholderLabel1 {
-    flex: 1;
-    position: relative;
-    font-size: var(--default-size-body-size);
-    letter-spacing: -0.41px;
-    line-height: 22px;
-    font-family: var(--default-size-body);
-    text-align: left;
-  }
-  .closeIcon {
-    position: relative;
-    width: 18px;
-    height: 18px;
-  }
-  .searchbar1 {
-    position: absolute;
-    top: 644px;
-    left: 151px;
-    width: 843px;
-    height: 39px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    text-align: center;
-    font-size: var(--font-size-lg);
+  .searchbar1 input {
+    margin-top: 2rem;
     color: var(--label-colors-lc-l-secondary);
     font-family: var(--font-sf-pro-display);
+    font-size: var(--font-size-lg);
+    border-radius: 4rem;
+    text-indent: 5rem;
+    width: 100%;
+    background-color: rgba(235, 235, 235, 0.939);
+    border: none;
   }
-  .image12Icon,
-  .image8Icon,
-  .image9Icon {
+  .searchbar1 button {
     position: absolute;
-    top: 922px;
-    left: 1339.6px;
-    width: 432.8px;
-    height: 382px;
-    object-fit: cover;
+    margin-top: -4.2rem;
+    margin-left: 0.5rem;
+    font-size: 3rem;
+    border-radius: 4rem;
+    border: none;
+    z-index: 1;
   }
-  .image12Icon,
-  .image9Icon {
-    top: 1273px;
-    left: 1024px;
-    width: 300px;
-    height: 329px;
-  }
-  .image12Icon {
-    top: 1055px;
-    left: 1648px;
-    width: 423px;
-    height: 464px;
-  }
-  .image13Icon,
-  .image14Icon,
-  .image15Icon {
-    position: absolute;
-    top: 99px;
-    left: 1123px;
-    width: 624.4px;
-    height: 472px;
-    object-fit: cover;
-  }
-  .image14Icon,
-  .image15Icon {
-    top: 840.9px;
-    left: 492.9px;
-    width: 603px;
-    height: 503.2px;
-  }
-  .image15Icon {
-    top: 411px;
-    left: 1613px;
-    width: 458px;
-    height: 553.9px;
-  }
-  .locofyHomePageChild {
-    position: absolute;
-    top: 488px;
-    left: 654px;
-    width: 100px;
-    height: 100px;
-    overflow: hidden;
+  .searchbar1 button:hover {
+    cursor: pointer;
   }
   .locofyHomePage {
-    position: relative;
+    position: absolute;
     border-radius: var(--br-6xl);
     background-color: var(--color-white);
     box-shadow: 12px 14px 22px rgba(0, 0, 0, 0.25);
-    width: 100%;
-    height: 1519px;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
     overflow: hidden;
     text-align: left;
     font-size: 50px;
     color: var(--color-black);
     font-family: var(--font-akshar);
+    background-image: url("../assets/For Background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
   }

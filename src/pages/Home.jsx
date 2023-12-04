@@ -1,43 +1,40 @@
+import { Link } from "react-router-dom";
+
 import styles from "./Home.module.css";
+
+import Logo from "../assets/image 5.svg"
 
 const Home = () => {
   return (
-    <div className={styles.locofyHomePage}>
-      <div className={styles.searchUpYour}>
-        Search up your favorite recipes, learn to cook it, and enjoy!
-      </div>
+    <>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+      <div className={styles.locofyHomePage}>
       <div className={styles.homeParent}>
-        <div className={styles.home}>HOME</div>
-        <div className={styles.history}>HISTORY</div>
+        <img className={styles.image5Icon} alt="" src={Logo} />
+        <Link className="HomeLink" to="/home">
+          <div className={styles.home}>HOME</div>
+        </Link>
+        <Link className="HomeLink" to="/recipes">
+          <div className={styles.history}>HISTORY</div>
+        </Link>
         <div className={styles.searchbar}>
           <div className={styles.content}>
-            <div className={styles.magnifyingglass}>
-              <div className={styles.magnifyingglass1}>􀊫</div>
-            </div>
-            <div className={styles.placeholderLabel}>Search</div>
+            <input type="text" placeholder="Search..." />
           </div>
         </div>
-        <img className={styles.image5Icon} alt="" src="/image-5@2x.png" />
       </div>
-      <img className={styles.image6Icon} alt="" src="/image-64@2x.png" />
-      <img className={styles.image7Icon} alt="" src="/image-74@2x.png" />
-      <div className={styles.searchbar1}>
-        <div className={styles.content}>
-          <div className={styles.magnifyingglass}>
-            <div className={styles.magnifyingglass3}>􀊫</div>
-          </div>
-          <div className={styles.placeholderLabel1}>Search</div>
-          <img className={styles.closeIcon} alt="" src="/-close.svg" />
+      
+      <div className={styles.pageChild}>
+        <div className={styles.searchUpYour}>
+          Search up your favorite recipes, learn to cook it, and enjoy!
+        </div>
+        <div className={styles.searchbar1}>
+          <input type="text" placeholder="Search..." />
+          <button type="submit"><i className="fa fa-search"></i></button>
         </div>
       </div>
-      <img className={styles.image8Icon} alt="" src="/image-84@2x.png" />
-      <img className={styles.image9Icon} alt="" src="/image-94@2x.png" />
-      <img className={styles.image12Icon} alt="" src="/image-124@2x.png" />
-      <img className={styles.image13Icon} alt="" src="/image-134@2x.png" />
-      <img className={styles.image14Icon} alt="" src="/image-144@2x.png" />
-      <img className={styles.image15Icon} alt="" src="/image-154@2x.png" />
-      <div className={styles.locofyHomePageChild} />
     </div>
+    </> 
   );
 };
 

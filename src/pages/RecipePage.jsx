@@ -1,113 +1,77 @@
-import { useCallback } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import styles from "./RecipePage.module.css";
 
-const RecipePage = () => {
-  const navigate = useNavigate();
+import Logo from "../assets/image 5.svg"
+import image23 from "../assets/image 23.jpg"
 
-  const onHOMETextClick = useCallback(() => {
-    navigate("/locofy-home-page");
-  }, [navigate]);
+const RecipePage = () => {
 
   return (
-    <div className={styles.locofyRecipePage}>
-      <img className={styles.image17Icon} alt="" src="/image-17@2x.png" />
-      <div className={styles.hamburger}>
-        <p className={styles.ingredients}>Hamburger</p>
-      </div>
-      <div className={styles.ingredientsGroundBeefContainer}>
-        <p className={styles.ingredients}>Ingredients:</p>
-        <ul className={styles.groundBeefSaltPepperHambur}>
-          <li className={styles.groundBeef}>Ground beef</li>
-          <li className={styles.groundBeef}>Salt</li>
-          <li className={styles.groundBeef}>Pepper</li>
-          <li className={styles.groundBeef}>Hamburger buns</li>
-        </ul>
-        <p className={styles.ingredients}>&nbsp;</p>
-        <p className={styles.ingredients}>Instructions:</p>
-        <ul className={styles.groundBeefSaltPepperHambur}>
-          <li className={styles.groundBeef}>Form Patties:</li>
-        </ul>
-        <ul className={styles.groundBeefSaltPepperHambur}>
-          <li className={styles.groundBeef}>
-            Take some ground beef and shape it into patties. Sprinkle a pinch of
-            salt and pepper on each side.
-          </li>
-        </ul>
-        <ul className={styles.groundBeefSaltPepperHambur}>
-          <li className={styles.groundBeef}>Cook Patties:</li>
-        </ul>
-        <ul className={styles.groundBeefSaltPepperHambur}>
-          <li className={styles.groundBeef}>
-            Cook the patties in a pan on medium-high heat for about 3-4 minutes
-            on each side. Adjust for your preferred doneness.
-          </li>
-        </ul>
-        <ul className={styles.groundBeefSaltPepperHambur}>
-          <li className={styles.groundBeef}>Toast Buns:</li>
-        </ul>
-        <ul className={styles.groundBeefSaltPepperHambur}>
-          <li className={styles.groundBeef}>
-            Toast the hamburger buns in the same pan or a toaster until slightly
-            golden.
-          </li>
-        </ul>
-        <ul className={styles.groundBeefSaltPepperHambur}>
-          <li className={styles.groundBeef}>Assemble:</li>
-        </ul>
-        <ul className={styles.groundBeefSaltPepperHambur}>
-          <li className={styles.groundBeef}>
-            Place the cooked patties on the bottom half of each bun.
-          </li>
-          <li className={styles.groundBeef}>
-            Add your favorite toppings (lettuce, tomato, onion, etc.).
-          </li>
-        </ul>
-        <ul className={styles.groundBeefSaltPepperHambur}>
-          <li className={styles.groundBeef}>Top with Other Bun Half:</li>
-        </ul>
-        <ul className={styles.groundBeefSaltPepperHambur}>
-          <li className={styles.groundBeef}>
-            Put the top half of the bun on each burger.
-          </li>
-        </ul>
-        <ul className={styles.groundBeefSaltPepperHambur}>
-          <li className={styles.groundBeef}>Serve:</li>
-        </ul>
-        <ul className={styles.groundBeefSaltPepperHambur}>
-          <li>
-            Your simple and delicious homemade hamburgers are ready to be
-            enjoyed!
-          </li>
-        </ul>
-      </div>
+    <>
       <div className={styles.homeParent}>
-        <div className={styles.home} onClick={onHOMETextClick}>
-          HOME
-        </div>
-        <div className={styles.history}>HISTORY</div>
+        <img className={styles.image5Icon} alt="" src={Logo} />
+        <Link className="HomeLink" to="/home">
+          <div className={styles.home}>HOME</div>
+        </Link>
+        <Link className="HomeLink" to="/home">
+          <div className={styles.history}>HISTORY</div>
+        </Link>
         <div className={styles.searchbar}>
           <div className={styles.content}>
-            <div className={styles.magnifyingglass}>
-              <div className={styles.magnifyingglass1}>􀊫</div>
-            </div>
-            <div className={styles.placeholderLabel}>Search</div>
+            <input type="text" placeholder="Search..." />
           </div>
         </div>
-        <img className={styles.image5Icon} alt="" src="/image-5@2x.png" />
       </div>
-      <img className={styles.image16Icon} alt="" src="/image-16@2x.png" />
-      <img className={styles.image16Icon} alt="" src="/image-16@2x.png" />
-      <img
-        className={styles.locofyRecipePageChild}
-        alt=""
-        src="/rectangle-1.svg"
-      />
-      <img className={styles.image21Icon} alt="" src="/image-21@2x.png" />
-      <img className={styles.image23Icon} alt="" src="/image-23@2x.png" />
-      <img className={styles.image19Icon} alt="" src="/image-19@2x.png" />
-      <img className={styles.image20Icon} alt="" src="/image-20@2x.png" />
-    </div>
+      <div className={styles.recipePage}>
+        <div className={styles.recipeText}>
+          <div className={styles.recipeTitle}>Hamburger</div>
+          <p className={styles.ingredients}>Ingredients:</p>
+          <ul className={styles.ingredientList}>
+            <li>Ground beef</li>
+            <li>Salt</li>
+            <li>Pepper</li>
+            <li>Hamburger buns</li>
+          </ul>
+          <p className={styles.instructions}>Instructions:</p>
+          <ol className={styles.instructionsList}>
+            <li className={styles.bulletPt}>Form Patties:</li>
+            <li className={styles.bulletPt}>
+              Take some ground beef and shape it into patties. Sprinkle a pinch of
+              salt and pepper on each side.
+            </li>
+            <li className={styles.bulletPt}>Cook Patties:</li>
+            <li className={styles.bulletPt}>
+              Cook the patties in a pan on medium-high heat for about 3-4 minutes
+              on each side. Adjust for your preferred doneness.
+            </li>
+            <li className={styles.bulletPt}>Toast Buns:</li>
+            <li className={styles.bulletPt}>
+              Toast the hamburger buns in the same pan or a toaster until slightly
+              golden.
+            </li>
+            <li className={styles.bulletPt}>Assemble:</li>
+            <li className={styles.bulletPt}>
+              Place the cooked patties on the bottom half of each bun.
+            </li>
+            <li className={styles.bulletPt}>
+              Add your favorite toppings (lettuce, tomato, onion, etc.).
+            </li>
+            <li className={styles.bulletPt}>Top with Other Bun Half:</li>
+            <li className={styles.bulletPt}>
+              Put the top half of the bun on each burger.
+            </li>
+            <li className={styles.bulletPt}>Serve:</li>
+            <li>
+              Your simple and delicious homemade hamburgers are ready to be
+              enjoyed!
+            </li>
+            <p/>
+            <p/>
+          </ol>
+        </div>
+        <img className={styles.image23Icon} alt="" src={image23} />
+      </div>
+    </>
   );
 };
 
