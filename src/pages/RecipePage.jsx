@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import styles from "./RecipePage.module.css";
+import styles from "./Recipepage.module.css";
 
-import Logo from "../assets/image 5.svg"
-import image23 from "../assets/image 23.jpg"
+import Logo from "../assets/image_5.svg"
+import image23 from "../assets/image_23.jpg"
 
 const RecipePage = () => {
 

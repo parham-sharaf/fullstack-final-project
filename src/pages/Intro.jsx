@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 import styles from "./Intro.module.css";
 
-import IntroCircle from "../assets/IntroCircle.svg"
+import IntroCircle from "../assets/introCircle.svg"
 
 const Intro = () => {return (
         <Link className="HomeLink" to="/home">
