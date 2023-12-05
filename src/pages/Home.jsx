@@ -1,15 +1,24 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import styles from "./Home.module.css";
 import Logo from "../assets/image_5.svg";
 
+
 const Home = () => {
   const [searchValue, setSearchValue] = useState(""); // State to hold the search value
+  const navigate = useNavigate();
 
   const handleSearchChange = (event) => {
     const value = event.target.value;
     setSearchValue(value);
+
   };
+
+  const handleKeyPress = (event) => {
+    if (event.key === 'Enter') {
+      handleSearchSubmit();
+    }}
 
   const handleSearchSubmit = () => {
     console.log("Searched value:", searchValue);
@@ -17,10 +26,16 @@ const Home = () => {
       .then((response) => response.json())
       .then((data) => {
         console.log('Received data:', data); // Log the received data
+        navigate("/recipes", { state: { recipes: data } });
+        
       })
       .catch((error) => {
         console.error('Error fetching recipes:', error);
       });
+    
+    
+
+      
   };
 
 
@@ -36,7 +51,7 @@ const Home = () => {
           <Link className="HomeLink" to="/home">
             <div className={styles.home}>HOME</div>
           </Link>
-          <Link className="HomeLink" to="/recipes">
+          <Link className="HomeLink" to="/history">
             <div className={styles.history}>HISTORY</div>
           </Link>
           <div className={styles.searchbar}>
@@ -67,6 +82,7 @@ const Home = () => {
               placeholder="Search..."
               value={searchValue}
               onChange={handleSearchChange}
+              onKeyPress={handleKeyPress}
             />
             <button type="submit" onClick={handleSearchSubmit}>
               <i className="fa fa-search"></i>
